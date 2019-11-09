@@ -8,6 +8,6 @@ while True:
 
 
 shuffle(people)
-offset = [people[-1]] + people[:-1]
-for santa, receiver in zip(people, offset):
+people_list = [people[-1]] + people[:-1]
+for santa, receiver in zip(people, people_list):
     print(santa, "buys for", receiver)
